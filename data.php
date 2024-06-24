@@ -2,7 +2,13 @@
 
 include __DIR__ . "/models/Prodotto.php";
 
-$prodotto = [
+$prodottoSingolo = [
     new Prodotto(
-        "Tiragraffi", "Gatti", "10€")
+        "PallaViva", "Gatti", "10€",
+        new Gioco("Pallina", "elettrico")),
+        
+        new Prodotto(
+            "Sleep", "Gatti", "10€",
+            new Gioco("", ""),
+            new Cuccia("CucciaSleep", "2 cani medi"))
 ];
