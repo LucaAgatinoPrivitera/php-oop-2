@@ -15,17 +15,11 @@ include __DIR__ . "/data.php";
 
 <body>
 
-public $nome;
-    public $categoria;
-    public $prezzo;
-    public $gioco;
-    public $cuccia;
-
     <!-- <?php //echo $prodottoSingolo[0]->nome ?> -->
 
     <div>
         <?php foreach ($prodottoSingolo as $prodotto) {
-            echo "<div>" . "<span>" . $prodotto->nome . "</span>" . "<span>" . $prodotto->categoria . "</span>" . "<span>" . $prodotto->prezzo . "</span>" . "<span>" /*. $prodotto->gioco . "</span>" . "<span>" . $prodotto->cuccia . "</span>"*/ . "</div>";
+            echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->gioco->nomeGioco  . " </span>" . "<span>" . $prodotto->cuccia->nomeCuccia ." </span>" . "<span>". $prodotto->cuccia->capienza . "</span>" . "</div>";
         } ?>
     </div>
 

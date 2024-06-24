@@ -8,7 +8,7 @@ $prodottoSingolo = [
         new Gioco("Pallina", "elettrico")),
         
         new Prodotto(
-            "Sleep", "Gatti", "10€",
+            "Sleep", "Cani", "10€",
             new Gioco("", ""),
             new Cuccia("CucciaSleep", "2 cani medi"))
 ];
