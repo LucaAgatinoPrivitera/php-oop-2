@@ -22,3 +22,6 @@ prevedete più utenti, ognuno con il suo carrello
 immaginare un metodo cliente->paga(12, 2025) che controlli la scadenza di una carta e in caso sia valida imposti il booleano cliente->carrelloPagato = true
 immaginate utenti standard e premium che hanno diverse scontistiche
 la lista è praticamente infinita
+
+Da chiedere:
+    Errore a riga 22 perché è null un valore
