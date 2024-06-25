@@ -23,7 +23,7 @@ include __DIR__ . "/data.php";
             // echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->nome  . " </span>" . "<span>" . $cuccia->nomeCuccia ." </span>" . "<span>". $cuccia->capienza . "</span>" . "</div>";
 
             echo "<div class='cards'>";
-            if (isset($prodotto->categoria) && $prodotto->categoria === $categoryCane) {
+            if (isset($prodotto->categoria) && $prodotto->categoria == $categoryCane) /* Da chiedere spiegazione su questo if perché non l'ho capito, modificandolo funziona come lo farei io però è sempre meglio sapere */  {
                 echo "<img src='https://www.veterinarimatera.it/wp-content/uploads/2021/03/cane-1.jpg'>";
             }
             else
