@@ -4,3 +4,29 @@
 body{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
+
+.container{
+    display: flex;
+}
+
+.cards{
+    width: 30rem;
+    padding: 2rem;
+}
+.cards span{
+    display: block;
+    padding: 0.5rem 0;
+}
+
+.nome{
+    text-align: center;
+}
+
+.descrizione{
+    
+    text-align: left;
+}
+
+.prezzo{
+    text-align: right;
+}

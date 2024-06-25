@@ -18,17 +18,22 @@ include __DIR__ . "/data.php";
     <!-- <?php //echo $prodottoSingolo[0]->nome 
             ?> -->
 
-    <div>
+    <div class="container">
         <?php foreach ($prodottoSingolo as $prodotto) {
             // echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->nome  . " </span>" . "<span>" . $cuccia->nomeCuccia ." </span>" . "<span>". $cuccia->capienza . "</span>" . "</div>";
 
-            echo "<div>" . $prodotto->nome . $prodotto->categoria . $prodotto->prezzo;
+            echo "<div class='cards'>" . "<span class='nome'>" . $prodotto->nome . " </span>" . "<span class='descrizione'>" . $prodotto->getDescrizione() . " </span>" ;
             if (isset($prodotto->elettrico)) {
-                echo $prodotto->elettrico;
+                echo "<span>" .  $prodotto->elettrico . " </span>";
             }
             if (isset($prodotto->capienza)) {
-                echo $prodotto->capienza;
+                echo "<span>" .  $prodotto->capienza . " </span>";
             }
+            if (isset($prodotto->materiale)) {
+                echo "<span>" .  $prodotto->materiale . " </span>";
+            }
+
+            echo "<span class='prezzo'>" .  $prodotto->prezzo . " </span>";
             echo "</div>"; // Rimuovi il punto prima della stringa
         }?>
     </div>
