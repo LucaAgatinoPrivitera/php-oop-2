@@ -2,12 +2,13 @@
 
 class Gioco extends Prodotto
 {
-    public $nomeGioco;
     public $elettrico;
 
-    public function __construct($nomeGioco, $elettrico)
-    {
-        $this->nomeGioco = $nomeGioco;
+    public function __construct($nome, $categoria, $prezzo, $elettrico) {
+
+        $this->nome = $nome;
+        $this->categoria = $categoria;
+        $this->prezzo = $prezzo;
         $this->elettrico = $elettrico;
     }
 }

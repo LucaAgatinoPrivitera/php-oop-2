@@ -2,12 +2,13 @@
 
 class Cuccia extends Prodotto
 {
-    public $nomeCuccia;
     public $capienza;
 
-    public function __construct($nomeCuccia, $capienza)
+    public function __construct($nome, $categoria, $prezzo, $capienza)
     {
-        $this->nomeCuccia = $nomeCuccia;
+        $this->nome = $nome;
+        $this->categoria = $categoria;
+        $this->prezzo = $prezzo;
         $this->capienza = $capienza;
     }
 }

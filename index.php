@@ -15,12 +15,22 @@ include __DIR__ . "/data.php";
 
 <body>
 
-    <!-- <?php //echo $prodottoSingolo[0]->nome ?> -->
+    <!-- <?php //echo $prodottoSingolo[0]->nome 
+            ?> -->
 
     <div>
         <?php foreach ($prodottoSingolo as $prodotto) {
-            echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->gioco->nomeGioco  . " </span>" . "<span>" . $prodotto->gioco->elettrico  . " </span>" . "<span>" . $prodotto->cuccia->nomeCuccia ." </span>" . "<span>". $prodotto->cuccia->capienza . "</span>" . "</div>";
-        } ?>
+            // echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->nome  . " </span>" . "<span>" . $cuccia->nomeCuccia ." </span>" . "<span>". $cuccia->capienza . "</span>" . "</div>";
+
+            echo "<div>" . $prodotto->nome . $prodotto->categoria . $prodotto->prezzo;
+            if (isset($prodotto->elettrico)) {
+                echo $prodotto->elettrico;
+            }
+            if (isset($prodotto->capienza)) {
+                echo $prodotto->capienza;
+            }
+            echo "</div>"; // Rimuovi il punto prima della stringa
+        }?>
     </div>
 
     <h1>pre</h1>

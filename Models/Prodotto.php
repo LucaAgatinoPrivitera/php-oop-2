@@ -8,16 +8,12 @@ class Prodotto
     public $nome;
     public $categoria;
     public $prezzo;
-    public $gioco;
-    public $cuccia;
 
-    public function __construct($nome, $categoria, $prezzo, Gioco $gioco = null, Cuccia $cuccia = null) {
+    public function __construct($nome, $categoria, $prezzo) {
 
         $this->nome = $nome;
         $this->categoria = $categoria;
         $this->prezzo = $prezzo;
-        $this->gioco = $gioco;
-        $this->cuccia = $cuccia;
     }
 
     public function infoComplete()

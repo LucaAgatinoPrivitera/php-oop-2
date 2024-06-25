@@ -4,11 +4,21 @@ include __DIR__ . "/models/Prodotto.php";
 
 $prodottoSingolo = [
     new Prodotto(
-        "PallaViva", "Gatti", "10€",
-        new Gioco("Pallina", "elettrico")),
-        
-        new Prodotto(
-            "Sleep", "Cani", "10€",
-            new Gioco("", ""),
-            new Cuccia("CucciaSleep", "2 cani medi"))
+        "provaNome",
+        "Cane",
+        "12€"
+    ),
+    new Gioco(
+        "PallaViva",
+        "Gatti",
+        "10€",
+        "elettrico",
+    ),
+
+    new Cuccia(
+        "Sleep",
+        "Cani",
+        "10€",
+        "2 cani medi"
+    )
 ];
