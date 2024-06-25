@@ -19,7 +19,7 @@ include __DIR__ . "/data.php";
 
     <div>
         <?php foreach ($prodottoSingolo as $prodotto) {
-            echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->gioco->nomeGioco  . " </span>" . "<span>" . $prodotto->cuccia->nomeCuccia ." </span>" . "<span>". $prodotto->cuccia->capienza . "</span>" . "</div>";
+            echo "<div>" . "<span>" . $prodotto->nome . " </span>" . "<span>" . $prodotto->categoria . " </span>" . "<span>" . $prodotto->prezzo . " </span>" . "<span>" . $prodotto->gioco->nomeGioco  . " </span>" . "<span>" . $prodotto->gioco->elettrico  . " </span>" . "<span>" . $prodotto->cuccia->nomeCuccia ." </span>" . "<span>". $prodotto->cuccia->capienza . "</span>" . "</div>";
         } ?>
     </div>
 
