@@ -12,6 +12,8 @@ body{
 .cards{
     width: 30rem;
     padding: 2rem;
+    background-color: rgb(219, 148, 148);
+    margin: 2rem;
 }
 .cards span{
     display: block;
@@ -29,4 +31,13 @@ body{
 
 .prezzo{
     text-align: right;
+}
+
+img{
+    display: block;
+    width: 100%;
+    margin: auto;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
 }
